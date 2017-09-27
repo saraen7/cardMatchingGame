@@ -38,7 +38,14 @@ $("document").ready(function(){ //loads the javascript after the HTML is mostly 
         } else {
           $(this).attr("src","images/Queen.png");//change the src tag to Queen if the class is Queen
         }
-      } else if (($(".faceUp.king").length == 2) || $(".faceUp.queen").length == 2) { //if two Kings are face up or two Queens are face up, turn the third card face up on click
+        $(this).on("change",function(){
+          if ($(".faceUp.king").length == 1 && $(".faceUp.queen").length == 1) { //if one king and one queen are face up
+            alert("Those two don't match. Try again."); // alert the user that the two cards don't match
+            $("img").removeClass("faceUp"); //remove the class of FaceUp from both cards
+            $("img").attr("src","images/back-of-card.png"); //display the backs of the cards
+          }
+        });
+      } else if ($(".faceUp.king").length == 2 || $(".faceUp.queen").length == 2) { //if two Kings are face up or two Queens are face up, turn the third card face up on click
         $(this).addClass("faceUp"); //adds class "faceUp"
         if($(this).hasClass("king")){
           $(this).attr("src","images/King.png");//change the src tag to King if the class is King
@@ -46,6 +53,9 @@ $("document").ready(function(){ //loads the javascript after the HTML is mostly 
           $(this).attr("src","images/Queen.png");//change the src tag to Queen if the class is Queen
         }
         alert("You win! You took _ turns."); //I don't know why this alert fires before the src changes in the image.
+    /*  } else if ($(".faceUp.king").length == 1 && $(".faceUp.queen").length == 1) {
+
+    }  */
 
       } else {
         alert("face up length is greater than 2")

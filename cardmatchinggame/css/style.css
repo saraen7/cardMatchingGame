@@ -1,4 +1,4 @@
-/* 
+/*
 Project Name: Blank Template
 Client: Your Client
 Author: Your Name
@@ -7,7 +7,7 @@ Developer @GA in NYC
 
 
 /******************************************
-/* SETUP                   
+/* SETUP
 /*******************************************/
 
 /* Box Model Hack */
@@ -32,17 +32,17 @@ Developer @GA in NYC
 }
 
 .alignright {
-	float: right; 
+	float: right;
 	padding: 0 0 10px 10px; /* note the padding around a right floated image */
 }
 
 .alignleft {
-	float: left; 
+	float: left;
 	padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 /******************************************
-/* BASE STYLES                   
+/* BASE STYLES
 /*******************************************/
 
 body {
@@ -54,7 +54,7 @@ body {
 
 
 /******************************************
-/* LAYOUT                   
+/* LAYOUT
 /*******************************************/
 
 /* Center the container */
@@ -64,7 +64,18 @@ body {
 }
 
 header {
+  align-content: center;
+}
 
+h1 {
+  text-align: center;
+}
+
+div > div {
+  border: solid black 1px;
+  margin: auto;
+  width: 40%;
+  padding: 30px;
 }
 
 footer {
@@ -72,9 +83,5 @@ footer {
 }
 
 /******************************************
-/* ADDITIONAL STYLES                   
+/* ADDITIONAL STYLES
 /*******************************************/
-
-
-
-

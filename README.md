@@ -3,7 +3,7 @@ This game requires the player to guess the two matching sets of cards in least n
 
 **Link to project:** https://saraen7.github.io/cardMatchingGame/cardmatchinggame/
 
-![alt tag](cardmatchinggame/images/screenshot.jpeg)
+![Alt text](/cardmatchinggame/images/screenshot.JPG?raw=true "Card Matching Game Screenshot")
 
 ## How It's Made:
 
